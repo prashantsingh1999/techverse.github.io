@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="w31.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Truculenta:opsz@12..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+       <!-- css file -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact US</title>
+    
+<style>
+  body{
+    
+    background-color:whitesmoke;
+  }
+</style>
+   
+</head>
+<body > 
+
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    
+    <!-- Right-sided navbar links -->
+ <div class="w3-bar w3-card w3-large " id="navbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-green  w3-hide-small w3-mobile"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="news.htm" class="w3-bar-item w3-button w3-hover-blue w3-hide-small w3-mobile"><i class="fa-solid fa-newspaper"></i>News</a>
+        <a href="dailydeals.htm"class="w3-bar-item w3-button  w3-hover-yellow w3-hide-small w3-mobile"><i class="fa-solid fa-indian-rupee-sign"></i>Daily Deals</a>
+        <a href="contactUS.html" class="w3-bar-item w3-button w3-hover-pink  w3-hide-small w3-mobile"><i class="fa fa-envelope"></i> Contact US</a>
+      </div>
+  
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="index.html" class="w3-bar-item  w3-center w3-hide-large w3-hide-medium " onclick="w3_open()" >
+    <h6 class="w3-text-red w3-large"> <b>Tech<span class="w3-text-amber w3-xlarge">Verse </span></b></h6>
+    </a>
+
+</div>
+</div>
+
+
+  <nav class="w3-sidebar w3-bar-block  w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X </a>
+        <a href="Homepage.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-green  w3-mobile"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="news.htm"   onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue  w3-mobile"><i class="fa-solid fa-newspaper"></i>News</a>
+        <a href="dailydeals.htm"  onclick="w3_close()" class="w3-bar-item w3-button w3-mobile w3-hover-yellow"><i class="fa-solid fa-indian-rupee-sign"></i>Daily Deals</a>
+        <a href="contactUS.html"  onclick="w3_close()" class="w3-bar-item w3-button  w3-mobile w3-hover-pink"><i class="fa fa-envelope"></i> Contact US</a>
+</nav>
+
+  <div class="w3-container w3-padding-64 " id="contact">
+    <div class="w3-row">
+      <div class="w3-col m4">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-white w3-bottombar">Contact Us</span></div>
+        <p><i class="fa fa-map-marker w3-text w3-xlarge"></i>Delhi,India</p>
+        <p><i class="fa fa-phone w3-text w3-xlarge"></i>+91 999999901</p>
+        <p><i class="fa fa-envelope-o w3-text w3-xlarge"></i>prashantsingh1001@gmail.com</p>
+      </div>
+
+
+       <div class="w3-col l6 m8"> 
+        <form method="post"  target="_blank"  name = "myForm" onsubmit = "return(validate());" >
+            <input class="w3-input w3-border w3-large w3-margin" type="text" placeholder=" First Name" required name="First Name">
+            <input class="w3-input w3-border  w3-large w3-margin" type="text" placeholder="Last Name" required name=" Last Name">
+            <input class="w3-input w3-border  w3-large w3-margin" type="email" placeholder="Email" required name="Email">
+            <input class="w3-input w3-border  w3-large w3-margin" type="tel" placeholder="Phone" required name="Phone">
+            <input class="w3-input w3-border  w3-large w3-margin" type="text area" placeholder="Message" required name="Message">
+          
+             &nbsp;  &nbsp; &nbsp;<button class="w3-button w3-deep-orange " type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
+            </p>
+          </form>
+      </div>
+    </div>
+  </div> 
+</form>
+</div>
+
+<script>
+  function validate(){
+    if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+    
+
+  }
+
+</script>
+
+          
+
+        <footer class="w3-black  w3-mobile">
+          <div class="w3-container  w3-center w3-large  ">
+            <h1 class="w3-text-red w3-xxxlarge"> <b>Tech<span class="w3-text-amber w3-jumbo">Verse </span></b></h1>
+            
+          </div>
+      
+          <div class="w3-container  w3-center w3-large  ">
+              <a href="#" class="w3-bar-item w3-button w3-hover-blue"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-hover-yellow"><i class="fa-brands fa-snapchat"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-hover-pink"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-hover-blue"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="w3-bar-item w3-button w3-hover-blue"><i class="fa-brands fa-linkedin"></i></a> 
+              <form>
+                <label for="email"> Your Email Here</label>&nbsp;&nbsp;
+                <input type="email" name="EMAIL" id="email" maxlength="320" 
+                 placeholder="Your email here"></input>
+                 <button  class="w3-deep-orange" type="submit" name="subscribe">Subscribe
+                </button>
+              </form>
+          </div> 
+          
+           
+           <p class="copyright w3-center"><strong> © TechVerse All Right Reserved 2022 </strong></p>
+           <p class=" w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> 
+           
+      <div class="w3-black"></div>
+           </footer>
+           <script>
+  
+            // navigation bar sticky
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+            
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+            
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            
+            // navigation bar and side bar 
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+            
+            function w3_open() {
+              if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+              } else {
+                mySidebar.style.display = 'block';
+              }
+            }
+            
+            
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+            
+            function w3_open() {
+              if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+              } else {
+                mySidebar.style.display = 'block';
+              }
+            }
+            
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+            </script>
+            </body>
+            </html>
+
+ 

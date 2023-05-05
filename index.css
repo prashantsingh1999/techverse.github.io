@@ -1,0 +1,41 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Truculenta', sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+a{
+  text-decoration: none;
+}
+body{
+    
+  background-color: white
+}
+p {
+ font-family: 'Roboto Condensed',sans-serif;; 
+ 
+}
+
+  header{
+   text-align: center;
+}
+
+  /* Style the navbar */
+#navbar {
+  
+  background-color: white;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footer{
+  background-color: aliceblue;
+}
